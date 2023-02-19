@@ -46,9 +46,10 @@ const Vari ={
         transition:{
             type:'spring',
             bounce:0.6,
-            duration:1,
-            delayChildren:0.2,
-            staggerChildren:0.2,
+            delay:4.8,
+            duration:2,
+            delayChildren:5.3,
+            staggerChildren:0.3,
         }},
 }
 const CircleVari={
@@ -65,7 +66,11 @@ export default function AniVariants() {
     return (
         <Step>
             <Title>👇Variants</Title>
-            <Box variants={Vari} initial='start' animate='end'>
+            <Box 
+            variants={Vari} 
+            initial='start' 
+            animate='end' 
+            >
                 <Circle variants={CircleVari}/>
                 <Circle variants={CircleVari}/>
                 <Circle variants={CircleVari}/>

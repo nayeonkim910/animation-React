@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { delay, motion, useMotionValue, useTransform } from "framer-motion";
 import { useRef,useEffect } from 'react';
 import styled from 'styled-components';
  
@@ -42,8 +42,8 @@ export default function AniPath() {
 
                  <motion.path 
                     transition={{
-                     pathLength:{duration:3},
-                    fill:{delay:1, duration:2},
+                     pathLength:{duration:3, delay:2.8},
+                    fill:{delay:3.6, duration:2},
                     }}
                     initial={{
                         pathLength:0,
