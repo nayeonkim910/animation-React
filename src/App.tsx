@@ -71,7 +71,7 @@ export default  function App() {
       initial={'start'}
       animate={'end'}
       >Hi 👋
-        <br/>This page made By
+        <br/>This page is made of
         <Description variants={childrenVari}><br/>React</Description>
         <Description variants={childrenVari}>& framer-motion</Description>
         <Description variants={childrenVari}>& styled-components</Description>
