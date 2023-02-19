@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Step =styled.div`
     width: 300px;
-height: 40vh;
+    height: 40vh;
     background: linear-gradient(rgb(233, 0, 156),rgb(65, 137, 254));
     padding: 10px;
     margin: 10px;

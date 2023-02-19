@@ -1,5 +1,4 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import { useRef,useEffect } from 'react';
 import styled from 'styled-components';
  
 const Step =styled(motion.div)`

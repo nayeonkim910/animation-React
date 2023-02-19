@@ -21,12 +21,13 @@ const Title =styled(motion.h3)`
 font-size: 40px;
 
 `
-const Description =styled(motion.h4)`
+const Description =styled(motion.p)`
 font-size: 25px;
 color:rgb(243, 224, 224);
 `
 const Wrapper = styled(motion.div)`
   width: 100%;
+  margin-top: 150px;
   padding: 40px;
   display: flex;
   height: 100%;
@@ -48,8 +49,8 @@ const titleVari ={
       bounce:0.6,
        duration:1,
        delay:0.5,
-       delayChildren:0.8,
-       staggerChildren:0.7,
+       delayChildren:1,
+       staggerChildren:0.5,
     },
 }}
 const childrenVari={

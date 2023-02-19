@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 import { useRef } from 'react';
 import styled from 'styled-components';
- 
+
 const Step =styled.div`
 width: 300px;
-/* background: linear-gradient(rgb(233, 0, 156),rgb(65, 137, 254)); */
 height: 40vh;
 border-radius: 20px;
 border: 1px solid pink;
-
 margin: 10px;
 padding: 10px;
 text-align: center;
@@ -18,7 +16,6 @@ justify-content: center;
 align-items: center;
 position: relative;
 overflow: hidden;
-
 `
  
 const Title =styled.h3`
@@ -29,7 +26,7 @@ const Title =styled.h3`
 const Box = styled(motion.div)`
   width: 150px;
   height: 150px;
-border: 1px solid pink;
+  border: 1px solid pink;
   margin: 10px;
   background-color: #090909;
   border-radius:30px;
@@ -51,7 +48,6 @@ export default function AniGestures() {
              drag
              dragSnapToOrigin
              dragConstraints={StepRef}
-             //  dragElastic={0.5}
              variants={GesturesVari} 
              whileHover={'hover'} 
              whileDrag={'drag'}

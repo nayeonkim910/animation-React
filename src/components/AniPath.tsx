@@ -39,7 +39,6 @@ export default function AniPath() {
                  <Svg
                  xmlns="http://www.w3.org/2000/svg" 
                  viewBox="0 0 448 512">
-
                  <motion.path 
                     transition={{
                      pathLength:{duration:3, delay:2.8},
