@@ -163,9 +163,9 @@ const ImgContainer =styled(motion.div)`
     ${ImgProject}{
       opacity: 0.2;
       scale:0.8;
-
     }
   }
+  height: 100%;
   position: relative;
 `
 const Preview =styled(motion.div)`
@@ -244,7 +244,7 @@ export default  function App() {
                   viewBox="0 0 384 512">
                   <motion.path 
                   transition={{
-                   pathLength:{delay:1,duration:2},
+                   pathLength:{delay:0.4,duration:2},
                   fill:{delay:1.5, duration:3},
                   }}
                   initial={{
