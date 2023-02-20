@@ -17,7 +17,7 @@ justify-content: center;
 align-items: center;
 border-radius: 20px;
 position: relative;
-overflow: hidden;
+/* overflow: hidden; */
 min-width: 300px;
 
 `
@@ -25,7 +25,7 @@ min-width: 300px;
 const Title =styled.h3`
     position: absolute;
     z-index: 50;
-    font-size: 40px;
+    font-size: 25px;
     color: #ffffff;
 `
 const Box = styled(motion.div)`
@@ -40,15 +40,14 @@ const ScrollVari={
 }
 export default function AniScroll() {
     const {scrollYProgress}= useScroll();
-    
     const ScaleChanged = useTransform(scrollYProgress,[0,1],[0.7,2]);
     return (
         <Step>
-            <Title>Scroll<br/> OR<br/>Drag</Title>
+            <Title>Scroll OR Drag</Title>
                  <Box 
                  style={{y:scrollYProgress, scale:ScaleChanged }}
                  dragSnapToOrigin
-                 drag={'x'}
+                 drag 
                  whileTap={{borderRadius:'100px', backgroundColor:'rgb(207, 36, 36)', transition:{duration:0.5}}}
                  variants={ScrollVari}
                  whileHover={'hover'}
